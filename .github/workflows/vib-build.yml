@@ -2,7 +2,7 @@ name: Vib Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "nvidia" ]
     tags:
       - '*'
   schedule:
@@ -11,6 +11,7 @@ on:
   workflow_dispatch:
 
 env:
+  CUSTOM_IMAGE_NAME: legion
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
