@@ -1,8 +1,8 @@
-name: Vib Build
+name: Vib Build Nvidia
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "nvidia" ]
     tags:
       - '*'
   schedule:
